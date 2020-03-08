@@ -35,28 +35,30 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
-                android:id="@+id/GymWorkOut"
+                android:id="@+id/gymWorkOut"
                 android:layout_below="@+id/gymWorkOutType"
                 android:layout_width="match_parent"
                 android:hint="@string/hint_workout"
                 android:layout_height="wrap_content"/>
             <EditText
-                android:id="@+id/setItem"
-                android:layout_below="@+id/GymWorkOut"
+                android:id="@+id/gymSetItem"
+                android:layout_below="@+id/gymWorkOut"
+                android:inputType="number"
                 android:layout_width="match_parent"
                 android:hint="@string/hint_set_reps"
                 android:layout_height="wrap_content"/>
 
             <EditText
-                android:id="@+id/GymWeights"
-                android:layout_below="@+id/setItem"
+                android:id="@+id/gymWeights"
+                android:layout_below="@+id/gymSetItem"
+                android:inputType="number"
                 android:layout_width="match_parent"
                 android:hint="@string/hint_gym_weight"
                 android:layout_height="wrap_content"/>
 
             <Button
                 android:id="@+id/saveButton"
-                android:layout_below="@+id/GymWeights"
+                android:layout_below="@+id/gymWeights"
                 android:layout_marginEnd="5dp"
                 android:textSize="14sp"
                 android:textStyle="bold"

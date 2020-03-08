@@ -3,6 +3,8 @@ package com.didarproj.gymtracker;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -21,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     private AlertDialog.Builder builder;
     private  AlertDialog dialog;
     private Button saveButton;
+    private EditText GymWorkOutType;
+    private EditText GymWorkOut;
+    private EditText GymSet_Reps;
+    private EditText GymWeights;
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -53,6 +59,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void createPopupDialog() {
+        builder= new AlertDialog.Builder(this);
+        View view = getLayoutInflater().inflate(R.layout.popup, null);
+
+        GymWorkOutType = view.findViewById(R.id.gymWorkOutType);
+        GymWorkOut= view.findViewById(R.id.gymWorkOut);
+        GymSet_Reps= view.findViewById(R.id.gymSetItem);
+        GymWeights= view.findViewById(R.id.gymWeights);
+
+        builder.setView(view);
+        dialog= builder.create(); // create dialog object
+        dialog.show();
+
+
     }
 
     @Override
