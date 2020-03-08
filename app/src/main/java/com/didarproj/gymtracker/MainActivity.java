@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.didarproj.gymtracker.data.DatabaseHandler;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText GymWorkOut;
     private EditText GymSet_Reps;
     private EditText GymWeights;
+    private DatabaseHandler databaseHandler;
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -36,11 +38,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        databaseHandler= new DatabaseHandler(this);
+
         saveButton = findViewById(R.id.saveButton);
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                saveItem();
+                saveItem(view);
                 
             }
         });
@@ -67,8 +72,9 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
-    private void saveItem() {
+    private void saveItem(View view) {
         //Todo: save each baby item to db and move to next screen
+
     }
 
     private void createPopupDialog() {
