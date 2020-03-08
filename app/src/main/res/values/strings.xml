@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Gym Tracker</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="enter_item">Enter Item</string>
+    <string name="hint_item">Enter Item</string>
+    <string name="hint_set">Enter Sets</string>
+    <string name="enter_type">Enter Work Out Type</string>
+    <string name="enter_gym">Enter Gym Info</string>
+    <string name="hint_type">Enter Gym Type</string>
+    <string name="hint_workout">Enter Gym WorkOut</string>
+    <string name="hint_set_reps">Enter Set and Reps</string>
+    <string name="hint_gym_weight">Enter Gym Weight</string>
+    <string name="save_button">Save</string>
+</resources>
